@@ -6,21 +6,24 @@ import ItemDetails from "./components/ItemDetails/ItemDetails";
 import Items from "./components/Items/Items";
 import Sidebar from "./components/SideBar/SideBar";
 import { FilterContextProvider } from "./contexts/filter-context";
+import { SingleItemContextProvider } from "./contexts/single-item-context";
 
 function App() {
   return (
-    <FilterContextProvider>
-      <div className="App">
-        <Header />
-        <Filter />
-        <div className="d-flex">
-          <Sidebar />
-          <Items />
-          <FilterCriteria />
-          <ItemDetails />
+    <SingleItemContextProvider>
+      <FilterContextProvider>
+        <div className="App">
+          <Header />
+          <Filter />
+          <div className="d-flex">
+            <Sidebar />
+            <Items />
+            <FilterCriteria />
+            <ItemDetails />
+          </div>
         </div>
-      </div>
-    </FilterContextProvider>
+      </FilterContextProvider>
+    </SingleItemContextProvider>
   );
 }
 

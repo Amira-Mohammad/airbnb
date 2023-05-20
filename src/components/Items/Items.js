@@ -1,8 +1,11 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import SelectedItemContext from "../../contexts/single-item-context";
 import "./Items.css";
 import SigleItem from "../SingleItem/SigleItem";
 
 function Items() {
+  const showSelectedItem = useContext(SelectedItemContext);
+  console.log("showSelectedItem fro items component", showSelectedItem);
   const [products] = useState([
     {
       id: 1,
@@ -35,7 +38,12 @@ function Items() {
         {products.map((Item) => {
           return (
             <div className="col-6 my-4" key={Item.id}>
-              <SigleItem Item={Item} />
+              <button
+                onClick={showSelectedItem.toggleSingleItem}
+                className="w-100 btn"
+              >
+                <SigleItem Item={Item} />
+              </button>
             </div>
           );
         })}
