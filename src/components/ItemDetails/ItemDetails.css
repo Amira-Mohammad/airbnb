@@ -40,6 +40,7 @@
   bottom: 0;
   position: absolute;
   z-index: 10;
+  transition: all 0.5s ease-in;
 }
 
 .secondImg {
@@ -62,4 +63,12 @@
 .icon {
   width: 35px;
   height: 35px;
+}
+
+.opacity_0 {
+  opacity: 0;
+}
+
+.opacity_1 {
+  opacity: 1;
 }
