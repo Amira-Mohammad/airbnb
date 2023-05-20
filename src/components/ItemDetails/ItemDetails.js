@@ -11,6 +11,13 @@ import { useContext } from "react";
 function ItemDetails() {
   const showSelectedItemContext = useContext(SelectedItemContext);
   console.log("SelectedItemContext from ItemDetails", showSelectedItemContext);
+
+  if (showSelectedItemContext.showSingleItem) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+
   return (
     <>
       {showSelectedItemContext.showSingleItem ? (
