@@ -4,6 +4,10 @@
   overflow: auto;
   height: calc(100vh - 144px);
 }
+
+.FilterCriteria::-webkit-scrollbar {
+  width: 0 !important;
+}
 .criteriaItems {
   padding: 24px;
 }

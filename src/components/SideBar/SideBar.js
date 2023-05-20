@@ -20,7 +20,7 @@ import "./SideBar.css";
 function Sidebar() {
   return (
     <div className="SideBar d-flex flex-column h-100">
-      <div className="d-flex  my-3 py-2  ">
+      <div className="d-flex  my-3 py-2  active">
         <Logo color="#121212" height={20} width={20} margin="ml-30" />
         <span class="mx-2">Home</span>
       </div>

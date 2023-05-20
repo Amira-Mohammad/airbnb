@@ -12,8 +12,13 @@
   bottom: 0;
   left: 35px;
 }
-.close {
+.closeBtnContainer {
   opacity: 0.5;
+  background-color: black;
+}
+
+.close {
+  opacity: 1;
 }
 
 .closeBtn {
@@ -34,11 +39,7 @@
   right: 0;
   bottom: 0;
   position: absolute;
-}
-
-.closeBtnContainer {
-  opacity: 0.5;
-  background-color: black;
+  z-index: 10;
 }
 
 .secondImg {

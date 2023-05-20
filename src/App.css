@@ -3,6 +3,14 @@
   --white: #ffffff;
 }
 
+.overflowHidden {
+  overflow-y: hidden !important;
+}
 .redColor {
   color: var(--red);
+}
+.madeIn {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
 }

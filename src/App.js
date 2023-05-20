@@ -21,6 +21,9 @@ function App() {
             <FilterCriteria />
             <ItemDetails />
           </div>
+          <div className="madeIn fw-bold bg-white p-2 rounded shadow-sm">
+            Made in Framer
+          </div>
         </div>
       </FilterContextProvider>
     </SingleItemContextProvider>

@@ -171,7 +171,7 @@ function FilterCriteria() {
           </div>
         </div>
         <div className="submitSearch border-top p-4">
-          <button className="w-100 bg-danger btn text-bg-danger">
+          <button disabled className="w-100 bg-danger btn text-bg-danger">
             Show 836 Homes
           </button>
         </div>
