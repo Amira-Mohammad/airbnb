@@ -23,7 +23,9 @@ function ItemDetails() {
       <div
         className={
           "overlay " +
-          (showSelectedItemContext.showSingleItem ? "opacity_1" : "opacity_0")
+          (showSelectedItemContext.showSingleItem
+            ? "showDetails"
+            : "HideDetails")
         }
         style={{ display: "flex" }}
       >
