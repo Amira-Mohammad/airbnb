@@ -4,6 +4,7 @@ import Guests from "../../Icons/Guests";
 import SelfCheckIn from "../../Icons/SelfCheckIn";
 import Super from "../../Icons/Super";
 import WorkSpace from "../../Icons/WorkSpace";
+import LocationMap from "../Map/Map";
 import "./ItemDetails.css";
 function ItemDetails() {
   return (
@@ -13,7 +14,10 @@ function ItemDetails() {
           <button className="closeBtn rounded-circle">x</button>
         </div>
       </div>
-      <div style={{ width: "90%" }} className="bg-white p-4">
+      <div
+        style={{ width: "90%", height: "100vh" }}
+        className="bg-white p-4 overflow-auto"
+      >
         <div className="container-fluid">
           <div className="row">
             <div className="col-6 position-relative ">
@@ -129,8 +133,99 @@ function ItemDetails() {
                 </button>
 
                 <hr className="text-muted my-5" />
+
+                <p className="fs-5 fw-bold">What this place offers</p>
+
+                <div className="d-flex my-4">
+                  <div>
+                    <Guests />
+                  </div>
+                  <div className="mx-3">Kitchen</div>
+                </div>
+
+                <div className="d-flex my-4">
+                  <div>
+                    <Guests />
+                  </div>
+                  <div className="mx-3">Dedicated workspaces</div>
+                </div>
+
+                <div className="d-flex my-4">
+                  <div>
+                    <Guests />
+                  </div>
+                  <div className="mx-3">55” 4k TV</div>
+                </div>
+
+                <div className="d-flex my-4">
+                  <div>
+                    <Guests />
+                  </div>
+                  <div className="mx-3">Free dryer - in unit</div>
+                </div>
+
+                <div className="d-flex my-4">
+                  <div>
+                    <Guests />
+                  </div>
+                  <div className="mx-3">Private patio or balcony</div>
+                </div>
+
+                <div className="d-flex my-4">
+                  <div>
+                    <Guests />
+                  </div>
+                  <div className="mx-3">Wifi</div>
+                </div>
+
+                <div className="d-flex my-4">
+                  <div>
+                    <Guests />
+                  </div>
+                  <div className="mx-3">1 parking space</div>
+                </div>
+
+                <div className="d-flex my-4">
+                  <div>
+                    <Guests />
+                  </div>
+                  <div className="mx-3">Centrail air conditioning</div>
+                </div>
+
+                <div className="d-flex my-4">
+                  <div>
+                    <Guests />
+                  </div>
+                  <div className="mx-3">Centrail air conditioning</div>
+                </div>
               </div>
+
+              <button className="bg-transparent border-0 fw-bold text-danger">
+                View more
+              </button>
+
+              <hr className="text-muted my-5" />
+
+              <p className="fs-5 fw-bold my-4">Where you'll be</p>
+              <div className="mapSection border rounded-4 ">
+                <LocationMap />
+              </div>
+
+              <p className="fs-5 text-black my-2">
+                Whitefish, Montana, United States
+              </p>
+              <p className="text-muted">
+                The property, given its close proximity to the refreshing
+                hillside town of Tagaytay and clear blue beaches of Nasugbu,
+                provides a quick escape from the hustle and bustle of city life.
+              </p>
+              <button className="bg-transparent border-0 fw-bold text-danger">
+                View more
+              </button>
+
+              <hr className="text-muted my-5" />
             </div>
+
             <div className="checkIn col-6 bg-white my-5 ">
               <div className="bgGray rounded-4 border p-3">
                 <div className="d-flex justify-content-between ">
