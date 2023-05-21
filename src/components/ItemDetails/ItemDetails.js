@@ -6,6 +6,7 @@ import Super from "../../Icons/Super";
 import WorkSpace from "../../Icons/WorkSpace";
 import LocationMap from "../Map/Map";
 import SelectedItemContext from "../../contexts/single-item-context";
+import profilePic from "../../images/profilePic.webp";
 import "./ItemDetails.css";
 import { useContext } from "react";
 function ItemDetails() {
@@ -250,6 +251,53 @@ function ItemDetails() {
                 </button>
 
                 <hr className="text-muted my-5" />
+                <p className="fs-5 fw-bold my-4">Host</p>
+                <div className="my-2">
+                  <img
+                    src={profilePic}
+                    width={60}
+                    height={60}
+                    className="rounded-circle profilePic"
+                  />
+                </div>
+                <div>Hosted by Brenda</div>
+                <div className="text-muted">Joined in August 2014</div>
+                <div className="my-4">
+                  <button className="btn border border-dark w-100">
+                    Contact Host
+                  </button>
+                </div>
+                <div className="d-flex">
+                  <div className="mx-4">
+                    <span>
+                      <i className="fa fa-star" aria-hidden="true"></i>
+                    </span>
+                    <span>2,635 reviews</span>
+                  </div>
+                  <div className="mx-4">
+                    <span>
+                      <i class="fa fa-square-o" aria-hidden="true"></i>
+                    </span>
+                    <span>Identity verified</span>
+                  </div>
+                  <div className="mx-4">
+                    <span>
+                      <Super />
+                    </span>
+                    <span>Superhost</span>
+                  </div>
+                </div>
+
+                <p className="text-muted">
+                  As a mother of 4, living in Solana Beach for 25+ years, I love
+                  to help families enjoy our beautiful area. Vacations are
+                  special and we do our very best to make them affordable,
+                  enjoy…
+                </p>
+
+                <button className="bg-transparent border-0 fw-bold text-danger">
+                  View more
+                </button>
               </div>
 
               <div className="checkIn col-6 bg-white my-5 ">
