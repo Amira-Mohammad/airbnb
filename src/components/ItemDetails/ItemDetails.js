@@ -268,27 +268,27 @@ function ItemDetails() {
                   </button>
                 </div>
                 <div className="d-flex">
-                  <div className="mx-4">
+                  <div>
                     <span>
                       <i className="fa fa-star" aria-hidden="true"></i>
                     </span>
-                    <span>2,635 reviews</span>
+                    <span className="px-2">2,635 reviews</span>
                   </div>
                   <div className="mx-4">
                     <span>
                       <i class="fa fa-square-o" aria-hidden="true"></i>
                     </span>
-                    <span>Identity verified</span>
+                    <span className="px-2">Identity verified</span>
                   </div>
                   <div className="mx-4">
                     <span>
                       <Super />
                     </span>
-                    <span>Superhost</span>
+                    <span className="px-2">Superhost</span>
                   </div>
                 </div>
 
-                <p className="text-muted">
+                <p className="text-muted my-3">
                   As a mother of 4, living in Solana Beach for 25+ years, I love
                   to help families enjoy our beautiful area. Vacations are
                   special and we do our very best to make them affordable,
