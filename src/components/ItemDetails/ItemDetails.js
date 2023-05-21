@@ -63,10 +63,10 @@ function ItemDetails() {
 
               <div className="col-6 bg-white my-5 ">
                 <div className="border d-inline-flex py-1 px-2 rounded-3">
-                  <div>
+                  <div className="mx-1">
                     <Super />
                   </div>
-                  <div>Superhost</div>
+                  <div className="mx-1">Superhost</div>
                 </div>
                 <div className="d-flex my-2">
                   <div className="icon bgGray p-2  rounded-circle text-center">
