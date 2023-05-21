@@ -31,7 +31,7 @@ function ItemDetails() {
         style={{ display: "flex" }}
       >
         <div className="p-2 closeBtnContainer" style={{ width: "10%" }}>
-          <div className=" bg-black close text-end p-2  ">
+          <div className="  close text-end p-2  ">
             <button
               onClick={showSelectedItemContext.toggleSingleItem}
               className="closeBtn rounded-circle"
@@ -229,7 +229,168 @@ function ItemDetails() {
                 <button className="bg-transparent border-0 fw-bold text-danger">
                   View more
                 </button>
+                <hr className="text-muted my-5" />
 
+                <div className="d-flex justify-content-between">
+                  <div className="fs-5 fw-bold ">Reviews</div>
+                  <div>
+                    <i className="fa fa-star" aria-hidden="true"></i>
+                    <span>5.0 — 124 reviews</span>
+                  </div>
+                </div>
+                <div className="border rounded-4 p-3 my-3">
+                  <div className="d-flex justify-content-between my-3">
+                    <label className=" label ">Cleanliness</label>
+                    <div class="progress my-2 mx-1">
+                      <div
+                        class="progress-bar"
+                        style={{ width: "50%" }}
+                        role="progressbar"
+                        aria-valuenow="0"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <div className="w-25">5.0</div>
+                  </div>
+
+                  <div className="d-flex justify-content-between my-3">
+                    <label className=" label ">Accuracy</label>
+                    <div class="progress my-2 mx-1">
+                      <div
+                        class="progress-bar"
+                        style={{ width: "25%" }}
+                        role="progressbar"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <div className="w-25">25.0</div>
+                  </div>
+
+                  <div className="d-flex justify-content-between my-3">
+                    <label className=" label ">Communication</label>
+                    <div class="progress my-2 mx-1">
+                      <div
+                        class="progress-bar"
+                        style={{ width: "75%" }}
+                        role="progressbar"
+                        aria-valuenow="75"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <div className="w-25">75.0</div>
+                  </div>
+
+                  <div className="d-flex justify-content-between my-3">
+                    <label className=" label ">Location</label>
+                    <div class="progress my-2 mx-1">
+                      <div
+                        class="progress-bar"
+                        style={{ width: "40%" }}
+                        role="progressbar"
+                        aria-valuenow="40"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <div className="w-25">40.0</div>
+                  </div>
+
+                  <div className="d-flex justify-content-between my-3">
+                    <label className=" label ">Check-in</label>
+                    <div class="progress my-2 mx-1">
+                      <div
+                        class="progress-bar"
+                        style={{ width: "80%" }}
+                        role="progressbar"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <div className="w-25">80.0</div>
+                  </div>
+
+                  <div className="d-flex justify-content-between my-3">
+                    <label className=" label ">Value</label>
+                    <div class="progress my-2 mx-1">
+                      <div
+                        class="progress-bar"
+                        style={{ width: "42%" }}
+                        role="progressbar"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <div className="w-25">42.0</div>
+                  </div>
+                </div>
+
+                <div className="border rounded-4 p-3 my-3">
+                  <div className="my-2 d-flex">
+                    <img
+                      src={profilePic}
+                      width={60}
+                      height={60}
+                      className="rounded-circle profilePic"
+                    />
+                    <div className="mx-3">
+                      <div className="fw-semibold">Steve</div>
+                      <div className="text-muted">March 2023</div>
+                    </div>
+                  </div>
+                  <p className="text-muted">
+                    Abbe's place was so wonderful and just what I needed. It was
+                    the perfect escape with a great wood stove, beautiful views,
+                    horses, and nearby skiing. I'm so grateful.
+                  </p>
+                </div>
+                <div className="border rounded-4 p-3 my-3">
+                  <div className="my-2 d-flex">
+                    <img
+                      src={profilePic}
+                      width={60}
+                      height={60}
+                      className="rounded-circle profilePic"
+                    />
+                    <div className="mx-3">
+                      <div className="fw-semibold">Daniel</div>
+                      <div className="text-muted">July 2022</div>
+                    </div>
+                  </div>
+                  <p className="text-muted">
+                    Abbe's place was so wonderful and just what I needed. It was
+                    the perfect escape with a great wood stove, beautiful views,
+                    horses, and nearby skiing. I'm so grateful.
+                  </p>
+                </div>
+                <div className="border rounded-4 p-3 my-3">
+                  <div className="my-2 d-flex">
+                    <img
+                      src={profilePic}
+                      width={60}
+                      height={60}
+                      className="rounded-circle profilePic"
+                    />
+                    <div className="mx-3">
+                      <div className="fw-semibold">Jackson</div>
+                      <div className="text-muted">April 2021</div>
+                    </div>
+                  </div>
+                  <p className="text-muted">
+                    Abbe's place was so wonderful and just what I needed. It was
+                    the perfect escape with a great wood stove, beautiful views,
+                    horses, and nearby skiing. I'm so grateful.
+                  </p>
+                </div>
+
+                <button className="bg-transparent border-0 fw-bold text-danger">
+                  View more
+                </button>
                 <hr className="text-muted my-5" />
 
                 <p className="fs-5 fw-bold my-4">Where you'll be</p>

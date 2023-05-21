@@ -13,8 +13,8 @@
   left: 35px;
 }
 .closeBtnContainer {
-  opacity: 0.5;
-  background-color: black;
+  /* opacity: 0.5; */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .close {
@@ -69,4 +69,14 @@
 .icon {
   width: 35px;
   height: 35px;
+}
+.label {
+  width: 80%;
+}
+.progress {
+  width: 250%;
+  height: 8px !important;
+}
+.progress-bar {
+  background-color: var(--red);
 }
