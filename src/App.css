@@ -2,10 +2,6 @@
   --red: rgb(255, 56, 92);
   --white: #ffffff;
 }
-
-.overflowHidden {
-  overflow-y: hidden !important;
-}
 .redColor {
   color: var(--red);
 }

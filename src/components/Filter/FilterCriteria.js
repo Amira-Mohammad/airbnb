@@ -3,10 +3,6 @@ import "./FilterCriteria.css";
 import FilterContext from "../../contexts/filter-context";
 function FilterCriteria() {
   const filterShow = useContext(FilterContext);
-  console.log(
-    "filterShowfilterShowfilterShowfilterShowfilterShow",
-    filterShow.showFilterCriteria
-  );
 
   if (filterShow.showFilterCriteria) {
     document.body.style.overflow = "hidden";

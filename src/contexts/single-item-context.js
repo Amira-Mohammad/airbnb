@@ -6,6 +6,7 @@ export function SingleItemContextProvider(props) {
   const [SingleItem, setSingleItem] = useState(false);
 
   function toggleSingleItem() {
+    window.scrollTo(0, 0);
     setSingleItem(!SingleItem);
   }
 

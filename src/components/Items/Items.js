@@ -5,7 +5,6 @@ import SigleItem from "../SingleItem/SigleItem";
 
 function Items() {
   const showSelectedItem = useContext(SelectedItemContext);
-  console.log("showSelectedItem fro items component", showSelectedItem);
   const [products] = useState([
     {
       id: 1,

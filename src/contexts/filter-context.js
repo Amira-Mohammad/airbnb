@@ -6,6 +6,7 @@ export function FilterContextProvider(props) {
   const [FilterCriteria, setFilterCriteria] = useState(false);
 
   function toggleFilterHandler() {
+    window.scrollTo(0, 0);
     setFilterCriteria(!FilterCriteria);
   }
 

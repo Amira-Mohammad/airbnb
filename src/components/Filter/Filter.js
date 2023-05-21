@@ -3,7 +3,6 @@ import "./Filter.css";
 import FilterContext from "../../contexts/filter-context";
 function Filter() {
   const filterShow = useContext(FilterContext);
-  console.log("filterShow frpm filterrrrrrrrrrrrr", filterShow);
   return (
     <div className="FilterContainer d-flex justify-content-between align-items-center border-bottom">
       <div className="bg-light rounded d-flex align-items-center">

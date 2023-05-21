@@ -11,7 +11,6 @@ import "./ItemDetails.css";
 import { useContext } from "react";
 function ItemDetails() {
   const showSelectedItemContext = useContext(SelectedItemContext);
-  console.log("SelectedItemContext from ItemDetails", showSelectedItemContext);
 
   if (showSelectedItemContext.showSingleItem) {
     document.body.style.overflow = "hidden";
@@ -42,7 +41,7 @@ function ItemDetails() {
         </div>
         <div
           style={{ width: "90%", height: "100vh" }}
-          className="bg-white p-4 overflow-auto"
+          className="bg-white hiddenScroll p-4 overflow-auto"
         >
           <div className="container-fluid">
             <div className="row">

@@ -80,3 +80,7 @@
 .progress-bar {
   background-color: var(--red);
 }
+
+.hiddenScroll::-webkit-scrollbar {
+  width: 0 !important;
+}
